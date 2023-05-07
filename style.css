@@ -1,119 +1,149 @@
-#iconsContainer{
-    display:flex;
-    align-items: left;
-    justify-content: left;
-    margin-top: 100px;
-    border-style: solid;
-   /* background-color: rgb(201, 59, 194);*/
-    margin-left: 94px;
-    margin-right:94px;
-
-}
-#InputcityInput{
-    background-color: rgb(178, 27, 153);
-    size: 580px;
-}
-
-
-
-
-.nav-item{
-    padding: 34px;
-    color:rgb(96, 12, 185);
-    font-size: 23px;
-    font-weight: bold;
+style.css
+body{
+    font-family: Arial, sans-serif;
+    background-image: url('y.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size:18px;
+    }
+    #InputcityInput{
+    background-color: rgb(178,27,153);
+    size:580px;
+    }
+    #iconsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    }
     
-}
-
-
-nav{
-    margin-top: 0%;
-    background-color: rgb(33, 3, 26);
-}
-
-
-
-#cityInput{
+    .icons{
+    margin: 20px;
+    text-align: center;
+    }
+     .image img{
+    max-width: 100%;
+    }
+    
+    nav{
+    margin-top:0%;
+    background-color: rgb(33,3,26);
+    }
+    
+    #cityInput{
     font-weight: bold;
-}
-
-#cityName{
+    }
+    
+    #cityName{
     font-weight: bold;
     font-size: 48px;
-}
-
-
-
- /*  #k{
-    position: fixed;
-    top:0;
-    left:0;
-    padding-top: 0%;
-    background-color: rgb(149, 139, 142);
-}
-
-*/
-
-p{
+    }
+    
+    P{
     margin-top: 16px;
     font-size: 21px;
-}
-
-
-
-
-.navbar-nav{ 
-     background-color: rgb(235, 95, 31);   
+    }
+    
+    .navbar-nav{
     display: flex;
-    padding: 0%;
-    top:0;
+    justify-content: space-between;
+    align-items:center;
+    background-color:rgb(33,3,26);
+    padding:0;
+    margin:10;
+    }
     
-
-}
-
-.k{
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-}
-
-.icons{
-    display: flex;
-    
-    
-}
-#a{
-    align-items: left;
-    justify-content: left;
-    display:inline;
-    margin-left: 120px;
-    
-}
-
-
-body{
-    background-image: url('y.jpeg');
-    background-size: 100% 150% ;
+    .nav-item{
+    margin-right: 5px;
+    }  
+     
+    .nav-link {
     color: white;
-    padding: 0;
-}
-
-
-
- 
-
-
- #j{
-    background-color: #ef7d26;
-    font-size:22px;
-    border-radius: 6px;
-    transition-duration: 0.6s;
-    box-shadow: 0 8px 16px 0;
- }
-
- #j:hover{
-    background-color: rgb(35, 198, 46);
- }
-
-
+    text-decoration: none;
+    }
+     
+      @media screen and (min-width: 768px) {
+        .navbar-nav {
+          flex-direction: row;
+        }
+      
+        .nav-item {
+          margin-right: 30px;}
+      
+        .nav-link {
+          color: white;
+          font-size: 1.2em;
+          text-transform: uppercase;
+        }
+        #inputcontainer input[type="text"] {
+            width: 200px;
+          }
+        #para1 {
+            font-size: 24px;
+          }
+    
+          #iconsContainer {
+            width: auto;
+            height: auto;
+            flex-direction: row;
+            align-items: center;
+            overflow: hidden;
+          }
+      }
+    #para1 {
+        text-align: center;
+        color: White;
+        margin-top: 50px;
+      }
+    
+      #inputcontainer {
+        margin: 30px auto;
+        text-align: center;
+      }
+    
+      #j {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        background-color: #ef7d26;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      #inputcontainer input[type="text"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        width: 250px;
+        margin-right: 10px;
+      }
+    
+      #j:hover{
+        background-color: rgb(35, 198, 46);
+     }
+    
+     #cityName {
+        text-align: center;
+        margin-top: 30px;
+        color: #333;
+      }
+    
+    .k{
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+    }
+    #a{
+        align-items: left;
+        justify-content: left;
+        display:inline;
+        margin-left: 120px;
+        
+    }
+    
+    
+    
